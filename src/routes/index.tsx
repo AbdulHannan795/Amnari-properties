@@ -47,6 +47,7 @@ function Hero() {
         muted
         loop
         playsInline
+        {...{ "webkit-playsinline": "true" }}
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* Dark overlays to keep text readable */}
