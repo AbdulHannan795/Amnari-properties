@@ -12,7 +12,7 @@ import {
 } from "@/components/shared";
 import heroVideo from "@/assets/dubai-hero.mp4";
 import aboutUsImg from "@/assets/aboutusimg.jpg";
-import ceoImg from "@/assets/ceo_img.jpeg";
+import ceoImg from "@/assets/ceo_pic_updated.jpeg";
 import ivoryFeedImg from "@/assets/ivory by dammac.jpg";
 import wynwoodFeedImg from "@/assets/IMTIAZ_Wynwood.jpg";
 import fiorFeedImg from "@/assets/FIOR 1 by emmar.webp";
@@ -68,7 +68,7 @@ function Hero() {
             Invest in Dubai's <span className="italic text-accent">Finest</span> Properties
           </h1>
           <p className="mt-7 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            A trusted UAE brokerage serving international investors. We curate access to off-plan launches, branded residences and prime secondary listings, backed by transparent advisory at every step.
+            A trusted UAE brokerage serving international and local investors. We curate access to off-plan launches, branded residences and prime secondary listings, backed by transparent advisory at every step.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -177,7 +177,7 @@ function Partners() {
         <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused] items-center">
           {loop.map((name, i) => (
             <div key={i} className="flex items-center shrink-0">
-              <span className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-widest text-foreground/60 hover:text-accent transition-colors duration-300 cursor-default">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-widest text-accent hover:text-foreground/60 transition-colors duration-300 cursor-default">
                 {name}
               </span>
               <span className="mx-8 lg:mx-12 text-foreground/20 select-none text-xl sm:text-2xl">

@@ -55,7 +55,7 @@ function ProjectsPage() {
           <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused] items-center">
             {loop.map((name, i) => (
               <div key={i} className="flex items-center shrink-0">
-                <span className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-widest text-foreground/60 hover:text-accent transition-colors duration-300 cursor-default">
+                <span className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-widest text-accent hover:text-foreground/60 transition-colors duration-300 cursor-default">
                   {name}
                 </span>
                 <span className="mx-8 lg:mx-12 text-foreground/20 select-none text-xl sm:text-2xl">

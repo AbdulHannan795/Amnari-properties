@@ -9,7 +9,7 @@ import {
   Instagram, Facebook, Linkedin, Youtube,
   ShieldCheck, Eye, Globe2, Users,
 } from "lucide-react";
-import amnariLogo from "@/assets/amnari_logo_bgremove.png";
+import amnariLogo from "@/assets/Amnari_Properties_logo.png";
 // Developer logo imports removed
 // Project images
 import wraithImg from "@/assets/wraith by binghatti.webp";
@@ -17,10 +17,10 @@ import rawDistrictOneImg from "@/assets/raw district one.jpg";
 import tilalImg from "@/assets/Tilal binghatti.jpg";
 import greenzImg from "@/assets/greenz by danube.jpg";
 import golfValeImg from "@/assets/Golf-Vale-at-Emaar.webp";
-import mercedesImg from "@/assets/Mercedes-Benz-Places-Binghatti-City.webp";
+import mercedesImg from "@/assets/Binghatti-Mercedes-Benz-Places.webp";
 import ivoryImg from "@/assets/ivory by dammac.jpg";
 import greencrestImg from "@/assets/greencrest by emar (1).jpg";
-import palmCentralImg from "@/assets/palm-central_residence by nakhel.jpg";
+import terraWoodsImg from "@/assets/terrawoods by emmar.webp";
 
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -29,19 +29,20 @@ export const WHATSAPP = "https://wa.me/971547521139?text=Hello%20Amnari%20Proper
 
 /** Nav items — "About" and "Projects" navigate to dedicated pages */
 export const NAV = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Partners", href: "/#partners" },
   { label: "Projects", href: "/projects" },
   { label: "Social", href: "/#social" },
   { label: "Contact", href: "/contact" },
-] as const;
+];
 
 export const PROJECTS = [
   {
     name: "Binghatti Wraith",
     developer: "Binghatti",
     loc: "Al Jaddaf",
-    bedrooms: "Studio, 1 BR, 2 BR",
+    bedrooms: "Studio, 1 BR, 2 BR, 3 BR",
     price: "AED 799K",
     img: wraithImg,
     handover: "Q4 2027",
@@ -58,7 +59,7 @@ export const PROJECTS = [
   {
     name: "Tilal Binghatti",
     developer: "Binghatti",
-    loc: "Dubai",
+    loc: "Dubai Academic City",
     bedrooms: "4, 5 BR",
     price: "AED 4.2M",
     img: tilalImg,
@@ -85,11 +86,11 @@ export const PROJECTS = [
   {
     name: "Mercedes-Benz Places",
     developer: "Binghatti Properties",
-    loc: "Business Bay",
-    bedrooms: "Studio, 1, 2, 3, 4, 5 BR",
-    price: "AED 1.35M",
+    loc: "Downtown Dubai",
+    bedrooms: "2, 3, 4 BR",
+    price: "AED 8.9M",
     img: mercedesImg,
-    handover: "Q2 2028",
+    handover: "Q4 2026",
   },
   {
     name: "Ivory — Damac Hills",
@@ -110,13 +111,13 @@ export const PROJECTS = [
     handover: "Q2 2029",
   },
   {
-    name: "Palm Central Private Residences",
-    developer: "Nakheel",
-    loc: "Palm Jebel Ali",
-    bedrooms: "1, 2, 3, 4, 5 BR",
-    price: "AED 2.5M",
-    img: palmCentralImg,
-    handover: "Q3 2029",
+    name: "Terra Woods",
+    developer: "Emaar Properties",
+    loc: "Madinat Expo City",
+    bedrooms: "1, 2, 3 BR",
+    price: "AED 1.6M",
+    img: terraWoodsImg,
+    handover: "Q1 2030",
   },
 ];
 
@@ -162,7 +163,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <img
         src={amnariLogo}
         alt="AMNARI Properties"
-        className="h-20 sm:h-[6.5rem] w-auto object-contain shrink-0 py-1"
+        className="h-28 sm:h-[10rem] w-auto object-contain shrink-0 py-1"
       />
     </Link>
   );
@@ -236,7 +237,7 @@ export function Nav() {
     mobile,
     onClick,
   }: {
-    item: (typeof NAV)[number];
+    item: { label: string; href: string };
     mobile?: boolean;
     onClick?: () => void;
   }) {
@@ -244,15 +245,35 @@ export function Nav() {
       ? "text-foreground/90 hover:text-accent transition-colors"
       : "text-sm text-foreground/80 hover:text-accent transition-colors tracking-wide";
 
-    // Page routes
-    if (item.href === "/about" || item.href === "/projects" || item.href === "/contact") {
+    if (item.href === "/") {
       return (
-        <Link to={item.href} className={cls} onClick={onClick}>
+        <Link to="/" className={cls} onClick={onClick}>
           {item.label}
         </Link>
       );
     }
-    // Anchor / hash links
+    if (item.href === "/about") {
+      return (
+        <Link to="/about" className={cls} onClick={onClick}>
+          {item.label}
+        </Link>
+      );
+    }
+    if (item.href === "/projects") {
+      return (
+        <Link to="/projects" className={cls} onClick={onClick}>
+          {item.label}
+        </Link>
+      );
+    }
+    if (item.href === "/contact") {
+      return (
+        <Link to="/contact" className={cls} onClick={onClick}>
+          {item.label}
+        </Link>
+      );
+    }
+
     return (
       <a href={item.href} className={cls} onClick={onClick}>
         {item.label}
@@ -284,7 +305,7 @@ export function Nav() {
             href={WHATSAPP}
             target="_blank"
             rel="noreferrer"
-            className="hidden sm:inline-flex btn-gold btn-gold-hover"
+            className="hidden sm:inline-flex btn-gold btn-gold-hover cursor-pointer"
           >
             <MessageCircle className="h-4 w-4" /> Contact
           </a>
@@ -335,7 +356,7 @@ export function Footer() {
         <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-10 mb-10">
           <div>
             <Logo />
-            <p className="text-sm text-muted-foreground mt-5 max-w-sm leading-relaxed">
+            <p className="text-sm text-muted-foreground mt-2 max-w-sm leading-relaxed">
               A Dubai-headquartered real-estate advisory connecting global investors with the
               UAE's most prestigious developments.
             </p>
@@ -343,25 +364,52 @@ export function Footer() {
           <div>
             <p className="eyebrow mb-4">Navigate</p>
             <ul className="space-y-2 text-sm">
-              {NAV.map((n) => (
-                <li key={n.label}>
-                  {n.href === "/about" || n.href === "/projects" || n.href === "/contact" ? (
-                    <Link
-                      to={n.href}
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      {n.label}
-                    </Link>
-                  ) : (
-                    <a
-                      href={n.href}
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
+              {NAV.map((n) => {
+                const footerCls = "text-muted-foreground hover:text-accent transition-colors";
+                if (n.href === "/") {
+                  return (
+                    <li key={n.label}>
+                      <Link to="/" className={footerCls}>
+                        {n.label}
+                      </Link>
+                    </li>
+                  );
+                }
+                if (n.href === "/about") {
+                  return (
+                    <li key={n.label}>
+                      <Link to="/about" className={footerCls}>
+                        {n.label}
+                      </Link>
+                    </li>
+                  );
+                }
+                if (n.href === "/projects") {
+                  return (
+                    <li key={n.label}>
+                      <Link to="/projects" className={footerCls}>
+                        {n.label}
+                      </Link>
+                    </li>
+                  );
+                }
+                if (n.href === "/contact") {
+                  return (
+                    <li key={n.label}>
+                      <Link to="/contact" className={footerCls}>
+                        {n.label}
+                      </Link>
+                    </li>
+                  );
+                }
+                return (
+                  <li key={n.label}>
+                    <a href={n.href} className={footerCls}>
                       {n.label}
                     </a>
-                  )}
-                </li>
-              ))}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div>

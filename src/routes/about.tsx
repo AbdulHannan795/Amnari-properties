@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ChevronDown, ArrowRight, MessageCircle } from "lucide-react";
 import { Nav, Footer, useReveal, VALUES, Stat, WHATSAPP, TikTokIcon } from "@/components/shared";
 import aboutUsImg from "@/assets/aboutusimg.jpg";
-import ceoImg from "@/assets/ceo_img.jpeg";
+import ceoImg from "@/assets/ceo_pic_updated.jpeg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

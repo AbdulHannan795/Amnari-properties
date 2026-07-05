@@ -197,7 +197,7 @@ function ContactPage() {
               Let's begin the <span className="italic text-accent">conversation.</span>
             </h1>
             <p className="reveal text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Our advisors are available six days a week to answer your questions and guide
+              Our advisors are available 24/7 to answer your questions and guide
               you through Dubai's finest real estate opportunities.
             </p>
           </div>
