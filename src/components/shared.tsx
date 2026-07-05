@@ -9,7 +9,7 @@ import {
   Instagram, Facebook, Linkedin, Youtube,
   ShieldCheck, Eye, Globe2, Users,
 } from "lucide-react";
-import amnariLogo from "@/assets/Amnari_Properties_logo.png";
+import amnariLogo from "@/assets/Amnari_Properties__Update.png";
 // Developer logo imports removed
 // Project images
 import wraithImg from "@/assets/wraith by binghatti.webp";
@@ -163,7 +163,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <img
         src={amnariLogo}
         alt="AMNARI Properties"
-        className="h-28 sm:h-[10rem] w-auto object-contain shrink-0 py-1"
+        className="h-28 sm:h-36 w-auto object-contain shrink-0 py-1"
       />
     </Link>
   );
@@ -291,14 +291,14 @@ export function Nav() {
         <div className="flex justify-start">
           <Logo />
         </div>
-        
+
         {/* Center: Navigation links centered */}
         <nav className="hidden lg:flex items-center justify-center gap-9">
           {NAV.map((n) => (
             <NavLink key={n.label} item={n} />
           ))}
         </nav>
-        
+
         {/* Right: Contact button on far right */}
         <div className="flex items-center justify-end gap-3">
           <a
