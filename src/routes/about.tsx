@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { ChevronDown, ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Nav, Footer, useReveal, VALUES, Stat, WHATSAPP, TikTokIcon } from "@/components/shared";
 import aboutUsImg from "@/assets/aboutusimg.jpg";
 import ceoImg from "@/assets/ceo_pic_updated.jpeg";
@@ -20,79 +19,6 @@ export const Route = createFileRoute("/about")({
   }),
   component: AboutPage,
 });
-
-// ── FAQ Data ─────────────────────────────────────────────────────────────────
-
-const FAQ = [
-  {
-    q: "Can foreigners buy property in Dubai?",
-    a: "Yes. Dubai's freehold zones — which include Downtown Dubai, Dubai Marina, Palm Jumeirah, Business Bay, and Dubai Hills Estate — allow full foreign ownership. You receive a title deed from the Dubai Land Department with 100% ownership rights, and there are no restrictions on repatriating rental income or sale proceeds.",
-  },
-  {
-    q: "What is an off-plan property?",
-    a: "An off-plan property is purchased directly from the developer before or during construction. Buyers typically benefit from below-market entry prices, flexible installment-based payment plans tied to construction milestones, and significant capital appreciation by the time the property is handed over.",
-  },
-  {
-    q: "What are typical payment plans for off-plan projects in Dubai?",
-    a: "Payment structures vary by developer and project. Common plans include 60/40 (60% during construction, 40% on handover), 80/20, and post-handover plans where payments extend 2–5 years after handover. Some projects also offer 1% monthly payment plans that make entry highly accessible for international investors.",
-  },
-  {
-    q: "What additional fees should I budget for when buying?",
-    a: "In addition to the purchase price, buyers should budget for the Dubai Land Department (DLD) registration fee of 4% of the property value, a developer admin fee (typically AED 4,000–5,000), mortgage registration if applicable (0.25% of the loan amount), and ongoing service charges post-handover.",
-  },
-  {
-    q: "Does investing in Dubai property qualify me for a UAE Golden Visa?",
-    a: "Yes. A property investment of AED 2 million or more qualifies the investor for a 10-year UAE Golden Visa, granting long-term residency for the investor and their immediate family — without requiring employer sponsorship. Off-plan properties under mortgage may qualify once sufficient equity has been paid.",
-  },
-  {
-    q: "What areas does AMNARI Properties specialize in?",
-    a: "We focus on Dubai's most prestigious and high-growth zones: Downtown Dubai, Dubai Marina, Palm Jumeirah, Business Bay, Dubai Hills Estate, Dubai Creek Harbour, Jumeirah Bay Island, and Emaar Beachfront. We also actively track emerging districts with strong ROI potential for early-stage investors.",
-  },
-  {
-    q: "How does AMNARI Properties earn its commission?",
-    a: "AMNARI Properties is compensated directly by the developer — not the buyer. This means you receive our complete advisory service, including property selection, developer negotiation, payment plan structuring, legal guidance, and post-handover support, at no additional cost to you whatsoever.",
-  },
-  {
-    q: "What is a post-handover payment plan?",
-    a: "A post-handover plan allows buyers to continue installment payments 1–5 years after the property is physically handed over. This reduces upfront financial commitment and enables investors to generate rental income from the property while still completing their payment schedule.",
-  },
-  {
-    q: "How do I verify a developer's credentials in Dubai?",
-    a: "All legitimate developers in Dubai must be registered with RERA (Real Estate Regulatory Agency), the regulatory arm of the Dubai Land Department. You can verify any developer, project, or broker on the Dubai REST app or the official DLD website. AMNARI Properties exclusively partners with RERA-registered, grade-A developers.",
-  },
-  {
-    q: "How long does the title deed transfer process take?",
-    a: "Once the property is fully paid and ready for handover, the title deed transfer at the Dubai Land Department typically takes 1–3 business days. For off-plan properties, the title deed is issued upon project completion and full payment clearance. AMNARI's legal partners manage the entire process on your behalf.",
-  },
-];
-
-// ── Sub-components ────────────────────────────────────────────────────────────
-
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border-b border-border last:border-0">
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="w-full text-left flex items-start justify-between py-5 gap-6 group"
-        aria-expanded={open}
-      >
-        <span className="font-serif text-lg text-foreground group-hover:text-accent transition-colors leading-snug">
-          {q}
-        </span>
-        <ChevronDown
-          className={`h-5 w-5 text-accent shrink-0 mt-0.5 transition-transform duration-300 ${
-            open ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-      {open && (
-        <p className="pb-6 text-muted-foreground text-sm leading-relaxed pr-10">{a}</p>
-      )}
-    </div>
-  );
-}
 
 // ── Page ─────────────────────────────────────────────────────────────────────
 
@@ -230,31 +156,6 @@ function AboutPage() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FAQ ── */}
-      <section className="py-24 lg:py-32">
-        <div className="w-full px-6 lg:px-16">
-          <div className="max-w-3xl mx-auto">
-            <p className="reveal-heading eyebrow text-center mb-4">Got Questions?</p>
-            <h2 className="reveal-heading font-serif text-3xl lg:text-5xl text-center mb-14">
-              Frequently Asked Questions
-            </h2>
-            <div className="reveal bg-card border border-border px-8 py-2">
-              {FAQ.map((item) => (
-                <FAQItem key={item.q} q={item.q} a={item.a} />
-              ))}
-            </div>
-            <div className="reveal mt-12 text-center">
-              <p className="text-muted-foreground mb-6">
-                Still have questions? Our advisors are ready to help.
-              </p>
-              <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn-gold btn-gold-hover">
-                <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
-              </a>
             </div>
           </div>
         </div>
