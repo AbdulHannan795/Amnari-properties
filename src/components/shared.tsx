@@ -13,14 +13,14 @@ import amnariLogo from "@/assets/Amnari_Properties__Update.png";
 // Developer logo imports removed
 // Project images
 import wraithImg from "@/assets/wraith by binghatti.webp";
-import rawDistrictOneImg from "@/assets/raw district one.jpg";
 import tilalImg from "@/assets/Tilal binghatti.jpg";
 import greenzImg from "@/assets/greenz by danube.jpg";
-import golfValeImg from "@/assets/Golf-Vale-at-Emaar.webp";
-import mercedesImg from "@/assets/Binghatti-Mercedes-Benz-Places.webp";
-import ivoryImg from "@/assets/ivory by dammac.jpg";
-import greencrestImg from "@/assets/greencrest by emar (1).jpg";
 import terraWoodsImg from "@/assets/terrawoods by emmar.webp";
+import rawDistrict2Img from "@/assets/Raw_District_Phase_2.webp";
+import samanaSouthHavenImg from "@/assets/samana south haven.jpg";
+import woodsSobhaImg from "@/assets/woods_sobha.jpg";
+import sobhaSanctuaryImg from "@/assets/sobha-sanctuary.jpg";
+import chelseaDamacImg from "@/assets/Chelsea-Residences-by-Damac.jpg";
 
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -48,15 +48,6 @@ export const PROJECTS = [
     handover: "Q4 2027",
   },
   {
-    name: "RAW District One",
-    developer: "Imtiaz Developments",
-    loc: "Downtown Jebel Ali",
-    bedrooms: "Studio, 1, 2, 3 BR",
-    price: "AED 649K",
-    img: rawDistrictOneImg,
-    handover: "Q4 2029",
-  },
-  {
     name: "Tilal Binghatti",
     developer: "Binghatti",
     loc: "Dubai Academic City",
@@ -75,42 +66,6 @@ export const PROJECTS = [
     handover: "Q4 2029",
   },
   {
-    name: "Golf Vale",
-    developer: "Emaar Properties",
-    loc: "Dubai South",
-    bedrooms: "1, 2, 3 BR",
-    price: "AED 1.10M",
-    img: golfValeImg,
-    handover: "Q1 2030",
-  },
-  {
-    name: "Mercedes-Benz Places",
-    developer: "Binghatti Properties",
-    loc: "Downtown Dubai",
-    bedrooms: "2, 3, 4 BR",
-    price: "AED 8.9M",
-    img: mercedesImg,
-    handover: "Q4 2026",
-  },
-  {
-    name: "Ivory — Damac Hills",
-    developer: "Damac Properties",
-    loc: "Damac Hills",
-    bedrooms: "3, 4, 5 BR",
-    price: "AED 2.57M",
-    img: ivoryImg,
-    handover: "Q2 2028",
-  },
-  {
-    name: "Greencrest",
-    developer: "Emaar Properties",
-    loc: "Dubai Hills Estate",
-    bedrooms: "1, 2, 3 BR",
-    price: "AED 1.57M",
-    img: greencrestImg,
-    handover: "Q2 2029",
-  },
-  {
     name: "Terra Woods",
     developer: "Emaar Properties",
     loc: "Madinat Expo City",
@@ -118,6 +73,51 @@ export const PROJECTS = [
     price: "AED 1.6M",
     img: terraWoodsImg,
     handover: "Q1 2030",
+  },
+  {
+    name: "Raw District 2 by Imtiaz",
+    developer: "Imtiaz Developments",
+    loc: "Sheikh Zayed Road",
+    bedrooms: "Studio, 1, 2, 3 BR",
+    price: "AED 666K",
+    img: rawDistrict2Img,
+    handover: "Q1 2029",
+  },
+  {
+    name: "SAMANA South Haven",
+    developer: "SAMANA Developers",
+    loc: "Dubai South",
+    bedrooms: "Studio, 1, 2 BR",
+    price: "AED 599K",
+    img: samanaSouthHavenImg,
+    handover: "Q4 2028",
+  },
+  {
+    name: "The Woods by Sobha Sanctuary",
+    developer: "Sobha Realty",
+    loc: "Al Yufrah 1",
+    bedrooms: "1, 2 BR",
+    price: "AED 999K",
+    img: woodsSobhaImg,
+    handover: "Q4 2029",
+  },
+  {
+    name: "Sobha Sanctuary",
+    developer: "Sobha Realty",
+    loc: "Al Yufrah 1",
+    bedrooms: "4, 5, 6 BR",
+    price: "AED 3.99M",
+    img: sobhaSanctuaryImg,
+    handover: "Q4 2029",
+  },
+  {
+    name: "Chelsea Residences by DAMAC",
+    developer: "DAMAC Properties",
+    loc: "Dubai Maritime City",
+    bedrooms: "1, 2, 3 BR",
+    price: "AED 2.16M",
+    img: chelseaDamacImg,
+    handover: "Q4 2029",
   },
 ];
 
