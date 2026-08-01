@@ -435,8 +435,11 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-border pt-6 flex justify-center text-center text-xs text-muted-foreground tracking-wide">
+        <div className="border-t border-border pt-6 flex flex-col items-center gap-2 text-center text-xs text-muted-foreground tracking-wide">
           <p>© {new Date().getFullYear()} AMNARI Properties. All Rights Reserved.</p>
+          <Link to="/privacy-policy" className="hover:text-accent transition-colors underline underline-offset-2">
+            Privacy Policy
+          </Link>
         </div>
       </div>
       <FloatingWhatsApp />
