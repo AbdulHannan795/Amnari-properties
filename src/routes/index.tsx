@@ -60,7 +60,7 @@ function Hero() {
           <div className="inline-flex items-center gap-2 border border-accent/40 bg-accent/10 px-4 py-2 mb-8">
             <span className="h-2 w-2 rounded-full bg-accent animate-pulse shrink-0" />
             <span className="text-xs sm:text-sm tracking-[0.18em] uppercase text-accent font-semibold">
-              Coming Soon: The Woods Serenity – Expression of Interest (EOI) Now Open
+              Coming Soon: Archive by Imtiaz – Expression of Interest (EOI) Now Open
             </span>
           </div>
 
@@ -320,7 +320,7 @@ function Contact() {
             <h2 className="font-serif text-4xl lg:text-5xl mb-8">Let's begin the conversation.</h2>
             <ul className="space-y-6">
               <ContactRow Icon={MapPin} title="Office Address">Warba Center Al Muraqqabat, Dubai</ContactRow>
-              <ContactRow Icon={Phone} title="Phone"><a href="tel:+971 547521139" className="hover:text-accent">+971 547521139</a></ContactRow>
+              <ContactRow Icon={Phone} title="Phone"><a href="tel:+971547521139" className="hover:text-accent">+971 547521139</a>{" / "}<a href="tel:+971547542963" className="hover:text-accent">+971 54 754 2963</a></ContactRow>
               <ContactRow Icon={Mail} title="Email"><a href="mailto:contact@amnariproperties.com" className="hover:text-accent">contact@amnariproperties.com</a></ContactRow>
               <ContactRow Icon={Clock} title="Working Hours">Monday – Saturday  10:00 am – 7:00 pm</ContactRow>
             </ul>
