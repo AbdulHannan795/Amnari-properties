@@ -93,6 +93,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap",
       },
     ],
+    scripts: [
+      // GA4 — load gtag.js from Google
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-B93R1DQ98E",
+        async: true,
+      },
+      // GA4 — initialise dataLayer and fire the first page_view
+      {
+        children: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-B93R1DQ98E', { send_page_view: true });
+        `,
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
