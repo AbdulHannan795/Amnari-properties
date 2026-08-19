@@ -5,17 +5,17 @@ import { Nav, Footer, useReveal } from "@/components/shared";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — AMNARI Properties" },
+      { title: "Privacy Policy — Amnari Properties" },
       {
         name: "description",
         content:
-          "Read the Privacy Policy of AMNARI Properties. We are committed to protecting your personal information and using it solely to assist your Dubai real estate journey.",
+          "Read the Privacy Policy of Amnari Properties. We are committed to protecting your personal information and using it solely to assist your Dubai real estate journey.",
       },
-      { property: "og:title", content: "Privacy Policy — AMNARI Properties" },
+      { property: "og:title", content: "Privacy Policy — Amnari Properties" },
       {
         property: "og:description",
         content:
-          "Learn how AMNARI Properties collects, uses, and protects your personal data.",
+          "Learn how Amnari Properties collects, uses, and protects your personal data.",
       },
     ],
   }),

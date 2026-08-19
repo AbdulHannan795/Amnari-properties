@@ -162,7 +162,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <Link to="/" className={`flex items-center ${className}`}>
       <img
         src={amnariLogo}
-        alt="AMNARI Properties"
+        alt="Amnari Properties"
         className="h-28 sm:h-36 w-auto object-contain shrink-0 py-1"
       />
     </Link>
@@ -436,7 +436,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border pt-6 flex flex-col items-center gap-2 text-center text-xs text-muted-foreground tracking-wide">
-          <p>© {new Date().getFullYear()} AMNARI Properties. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Amnari Properties. All Rights Reserved.</p>
           <Link to="/privacy-policy" className="hover:text-accent transition-colors underline underline-offset-2">
             Privacy Policy
           </Link>

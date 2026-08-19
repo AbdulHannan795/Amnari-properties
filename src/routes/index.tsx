@@ -23,9 +23,9 @@ import mercedesFeedImg from "@/assets/Mercedes-Benz-Places-Binghatti-City.webp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AMNARI Properties — Premium Dubai Real Estate & Off-Plan Investments" },
-      { name: "description", content: "Invest in Dubai's most prestigious off-plan properties. AMNARI Properties partners with Emaar, DAMAC, Sobha & Nakheel to serve global investors." },
-      { property: "og:title", content: "AMNARI Properties — Premium Dubai Real Estate" },
+      { title: "Amnari Properties — Premium Dubai Real Estate & Off-Plan Investments" },
+      { name: "description", content: "Invest in Dubai's most prestigious off-plan properties. Amnari Properties partners with Emaar, DAMAC, Sobha & Nakheel to serve global investors." },
+      { property: "og:title", content: "Amnari Properties — Premium Dubai Real Estate" },
       { property: "og:description", content: "A trusted UAE brokerage connecting international investors with Dubai's finest developments." },
     ],
   }),
@@ -102,7 +102,7 @@ function About() {
       <div className="w-full px-6 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="reveal order-2 lg:order-1">
-            <p className="eyebrow mb-5">About AMNARI</p>
+            <p className="eyebrow mb-5">About Amnari</p>
             <h2 className="font-serif text-4xl lg:text-5xl mb-7 leading-tight">
               A trusted bridge between global capital and Dubai real estate.
             </h2>

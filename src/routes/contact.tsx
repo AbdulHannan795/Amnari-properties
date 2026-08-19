@@ -14,16 +14,16 @@ import heroDubaiImg from "@/assets/hero-dubai.jpg";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact AMNARI Properties — Get in Touch" },
+      { title: "Contact Amnari Properties — Get in Touch" },
       {
         name: "description",
         content:
-          "Contact AMNARI Properties for expert Dubai real estate advisory. Visit our office in Dubai, call us, or send an enquiry — we are here to help.",
+          "Contact Amnari Properties for expert Dubai real estate advisory. Visit our office in Dubai, call us, or send an enquiry — we are here to help.",
       },
-      { property: "og:title", content: "Contact AMNARI Properties" },
+      { property: "og:title", content: "Contact Amnari Properties" },
       {
         property: "og:description",
-        content: "Reach out to AMNARI Properties for personalised real estate advice in Dubai.",
+        content: "Reach out to Amnari Properties for personalised real estate advice in Dubai.",
       },
     ],
   }),

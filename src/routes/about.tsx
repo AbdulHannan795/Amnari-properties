@@ -7,13 +7,13 @@ import ceoImg from "@/assets/ceo_pic_updated.jpeg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About AMNARI Properties — Dubai Real Estate Advisory" },
+      { title: "About Amnari Properties — Dubai Real Estate Advisory" },
       {
         name: "description",
         content:
-          "Learn about AMNARI Properties — a trusted UAE real estate advisory connecting global investors with Dubai's most prestigious off-plan developments.",
+          "Learn about Amnari Properties — a trusted UAE real estate advisory connecting global investors with Dubai's most prestigious off-plan developments.",
       },
-      { property: "og:title", content: "About AMNARI Properties" },
+      { property: "og:title", content: "About Amnari Properties" },
       { property: "og:description", content: "15+ years of expertise in Dubai real estate. RERA-licensed advisory serving investors across 40+ countries." },
     ],
   }),

@@ -77,15 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AMNARI Properties — Premium Dubai Real Estate & Off-Plan Investments" },
-      { name: "description", content: "AMNARI Properties connects global investors with Dubai's most prestigious off-plan developments. Partnered with Emaar, DAMAC, Sobha, and Nakheel." },
-      { property: "og:title", content: "AMNARI Properties — Premium Dubai Real Estate" },
+      { title: "Amnari Properties — Premium Dubai Real Estate & Off-Plan Investments" },
+      { name: "description", content: "Amnari Properties connects global investors with Dubai's most prestigious off-plan developments. Partnered with Emaar, DAMAC, Sobha, and Nakheel." },
+      { property: "og:title", content: "Amnari Properties — Premium Dubai Real Estate" },
       { property: "og:description", content: "Invest in Dubai's finest off-plan properties with a trusted UAE brokerage." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.jpg", type: "image/jpeg" },
+      { rel: "shortcut icon", href: "/favicon.jpg", type: "image/jpeg" },
+      { rel: "apple-touch-icon", href: "/favicon.jpg" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

@@ -5,14 +5,14 @@ import { Nav, Footer, useReveal, PROJECTS, ProjectCard, DEVELOPER_NAMES, WHATSAP
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Our Projects — AMNARI Properties Dubai" },
+      { title: "Our Projects — Amnari Properties Dubai" },
       {
         name: "description",
         content:
-          "Browse AMNARI Properties' curated portfolio of premium off-plan projects across Dubai — Marina, Palm Jumeirah, Downtown, Business Bay and more.",
+          "Browse Amnari Properties' curated portfolio of premium off-plan projects across Dubai — Marina, Palm Jumeirah, Downtown, Business Bay and more.",
       },
-      { property: "og:title", content: "Projects — AMNARI Properties" },
-      { property: "og:description", content: "Explore Dubai's finest off-plan developments hand-selected by AMNARI Properties." },
+      { property: "og:title", content: "Projects — Amnari Properties" },
+      { property: "og:description", content: "Explore Dubai's finest off-plan developments hand-selected by Amnari Properties." },
     ],
   }),
   component: ProjectsPage,
