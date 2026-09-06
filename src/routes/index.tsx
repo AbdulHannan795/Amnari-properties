@@ -60,7 +60,7 @@ function Hero() {
           <div className="inline-flex items-center gap-2 border border-accent/40 bg-accent/10 px-4 py-2 mb-8">
             <span className="h-2 w-2 rounded-full bg-accent animate-pulse shrink-0" />
             <span className="text-xs sm:text-sm tracking-[0.18em] uppercase text-accent font-semibold">
-              Coming Soon: Archive by Imtiaz – Expression of Interest (EOI) Now Open
+              Coming Soon: Alva at The Valley by Emaar — Expression of Interest (EOI) Now Open
             </span>
           </div>
 

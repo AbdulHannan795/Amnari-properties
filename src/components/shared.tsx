@@ -17,10 +17,14 @@ import tilalImg from "@/assets/Tilal binghatti.jpg";
 import greenzImg from "@/assets/greenz by danube.jpg";
 import terraWoodsImg from "@/assets/terrawoods by emmar.webp";
 import rawDistrict2Img from "@/assets/Raw_District_Phase_2.webp";
+import valiaEmaarImg from "@/assets/valia emaar.jpg";
 import samanaSouthHavenImg from "@/assets/samana south haven.jpg";
 import woodsSobhaImg from "@/assets/woods_sobha.jpg";
 import sobhaSanctuaryImg from "@/assets/sobha-sanctuary.jpg";
 import chelseaDamacImg from "@/assets/Chelsea-Residences-by-Damac.jpg";
+import alvaValleyImg from "@/assets/alva_valley_phase 3.png";
+import binghattiSpectreImg from "@/assets/spectre_pic_2.jpg";
+import archiveImtiazImg from "@/assets/the-archive-by-imtiaz.webp";
 
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -38,50 +42,43 @@ export const NAV = [
 ];
 
 export const PROJECTS = [
+  // ── New featured projects (first row) ────────────────────────────────────
   {
-    name: "Binghatti Wraith",
-    developer: "Binghatti",
-    loc: "Al Jaddaf",
-    bedrooms: "Studio, 1 BR, 2 BR, 3 BR",
-    price: "AED 799K",
-    img: wraithImg,
-    handover: "Q4 2027",
-  },
-  {
-    name: "Tilal Binghatti",
-    developer: "Binghatti",
-    loc: "Dubai Academic City",
-    bedrooms: "4, 5 BR",
-    price: "AED 4.2M",
-    img: tilalImg,
-    handover: "Q4 2028",
-  },
-  {
-    name: "Greenz by Danube",
-    developer: "Danube Properties",
-    loc: "Academic City, Dubai",
-    bedrooms: "3, 4, 5 BR",
-    price: "AED 3.5M",
-    img: greenzImg,
-    handover: "Q4 2029",
-  },
-  {
-    name: "Terra Woods",
+    name: "Alva at The Valley",
     developer: "Emaar Properties",
-    loc: "Madinat Expo City",
-    bedrooms: "1, 2, 3 BR",
-    price: "AED 1.6M",
-    img: terraWoodsImg,
+    loc: "The Valley, Dubai",
+    bedrooms: "3 BR, 4 BR Townhouses",
+    price: "AED 4.38M",
+    img: alvaValleyImg,
     handover: "Q1 2030",
   },
   {
-    name: "Raw District 2 by Imtiaz",
+    name: "Binghatti Spectre",
+    developer: "Binghatti Developers",
+    loc: "Al Jaddaf, Dubai",
+    bedrooms: "Studio, 1 BR, 2 BR, 3 BR, Offices & Retail",
+    price: "AED 775K",
+    img: binghattiSpectreImg,
+    handover: "Q4 2028",
+  },
+  {
+    name: "Archive by Imtiaz",
     developer: "Imtiaz Developments",
-    loc: "Sheikh Zayed Road",
-    bedrooms: "Studio, 1, 2, 3 BR",
+    loc: "Dubai Land Residence Complex (DLRC)",
+    bedrooms: "Studio, 1 BR, 2 BR, 3 BR Apartments",
     price: "AED 666K",
-    img: rawDistrict2Img,
-    handover: "Q1 2029",
+    img: archiveImtiazImg,
+    handover: "Q3 2028",
+  },
+  // ── Existing projects ────────────────────────────────────────────────────
+  {
+    name: "Valia by Emaar",
+    developer: "Emaar Properties",
+    loc: "Dubai Creek Harbour",
+    bedrooms: "1 BR, 2 BR, 3 BR, 4 BR Apartments",
+    price: "AED 1.96M",
+    img: valiaEmaarImg,
+    handover: "Q4 2030",
   },
   {
     name: "SAMANA South Haven",
@@ -91,6 +88,15 @@ export const PROJECTS = [
     price: "AED 599K",
     img: samanaSouthHavenImg,
     handover: "Q4 2028",
+  },
+  {
+    name: "Terra Woods",
+    developer: "Emaar Properties",
+    loc: "Madinat Expo City",
+    bedrooms: "1, 2, 3 BR",
+    price: "AED 1.6M",
+    img: terraWoodsImg,
+    handover: "Q1 2030",
   },
   {
     name: "The Woods by Sobha Sanctuary",
@@ -117,6 +123,34 @@ export const PROJECTS = [
     bedrooms: "1, 2, 3 BR",
     price: "AED 2.16M",
     img: chelseaDamacImg,
+    handover: "Q4 2029",
+  },
+  // ── Moved to end ─────────────────────────────────────────────────────────
+  {
+    name: "Binghatti Wraith",
+    developer: "Binghatti",
+    loc: "Al Jaddaf",
+    bedrooms: "Studio, 1 BR, 2 BR, 3 BR",
+    price: "AED 799K",
+    img: wraithImg,
+    handover: "Q4 2027",
+  },
+  {
+    name: "Tilal Binghatti",
+    developer: "Binghatti",
+    loc: "Dubai Academic City",
+    bedrooms: "4, 5 BR",
+    price: "AED 4.2M",
+    img: tilalImg,
+    handover: "Q4 2028",
+  },
+  {
+    name: "Greenz by Danube",
+    developer: "Danube Properties",
+    loc: "Academic City, Dubai",
+    bedrooms: "3, 4, 5 BR",
+    price: "AED 3.5M",
+    img: greenzImg,
     handover: "Q4 2029",
   },
 ];
