@@ -97,6 +97,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     scripts: [
+      // GTM — load container GTM-MP4SN6TN as early as possible in <head>
+      {
+        children: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MP4SN6TN');`,
+      },
       // GA4 — load gtag.js from Google
       {
         src: "https://www.googletagmanager.com/gtag/js?id=G-B93R1DQ98E",
@@ -126,6 +134,12 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        {/* GTM noscript — must be immediately after opening <body> tag */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP4SN6TN" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
+        />
         {children}
         <Scripts />
       </body>
