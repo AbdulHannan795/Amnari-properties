@@ -105,20 +105,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MP4SN6TN');`,
       },
-      // GA4 — load gtag.js from Google
-      {
-        src: "https://www.googletagmanager.com/gtag/js?id=G-B93R1DQ98E",
-        async: true,
-      },
-      // GA4 — initialise dataLayer and fire the first page_view
-      {
-        children: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-B93R1DQ98E', { send_page_view: true });
-        `,
-      },
     ],
   }),
   shellComponent: RootShell,
