@@ -25,6 +25,9 @@ import chelseaDamacImg from "@/assets/Chelsea-Residences-by-Damac.jpg";
 import alvaValleyImg from "@/assets/alva_valley_phase 3.png";
 import binghattiSpectreImg from "@/assets/spectre_pic_2.jpg";
 import archiveImtiazImg from "@/assets/the-archive-by-imtiaz.webp";
+import shahrukhzImg from "@/assets/shahrukhz_residences.jpg";
+import starfallBinghattiImg from "@/assets/starfall_binghatti.webp";
+import serenzDanubeImg from "@/assets/Serenz_danube.jpg";
 
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -42,7 +45,26 @@ export const NAV = [
 ];
 
 export const PROJECTS = [
-  // ── New featured projects (first row) ────────────────────────────────────
+  // ── Position #1 & #2: New featured launches ──────────────────────────────
+  {
+    name: "Shahrukhz Residences",
+    developer: "Danube Properties",
+    loc: "Dubai Maritime City",
+    bedrooms: "Studio, 1BR, 2BR, 3BR",
+    price: "AED 1.65M",
+    img: shahrukhzImg,
+    handover: "Q2 2030",
+  },
+  {
+    name: "Binghatti Starfall",
+    developer: "Binghatti Developers",
+    loc: "Al Jaddaf, Dubai",
+    bedrooms: "Studio, 1BR, 2BR",
+    price: "AED 760K",
+    img: starfallBinghattiImg,
+    handover: "Q3 2028",
+  },
+  // ── Position #3 through #9: Existing shifted projects ────────────────────
   {
     name: "Alva at The Valley",
     developer: "Emaar Properties",
@@ -70,7 +92,6 @@ export const PROJECTS = [
     img: archiveImtiazImg,
     handover: "Q3 2028",
   },
-  // ── Existing projects ────────────────────────────────────────────────────
   {
     name: "Valia by Emaar",
     developer: "Emaar Properties",
@@ -107,6 +128,26 @@ export const PROJECTS = [
     img: woodsSobhaImg,
     handover: "Q4 2029",
   },
+  // ── Position #10 & #11: Danube projects ──────────────────────────────────
+  {
+    name: "Greenz by Danube",
+    developer: "Danube Properties",
+    loc: "Academic City, Dubai",
+    bedrooms: "3, 4, 5 BR",
+    price: "AED 3.5M",
+    img: greenzImg,
+    handover: "Q4 2029",
+  },
+  {
+    name: "Serenz by Danube",
+    developer: "Danube Properties",
+    loc: "Jumeirah Village Circle (JVC), Dubai",
+    bedrooms: "Studio, 1BR, 2BR, 3BR",
+    price: "AED 850K",
+    img: serenzDanubeImg,
+    handover: "Q4 2029",
+  },
+  // ── Position #12 through #15: Remaining existing projects ────────────────
   {
     name: "Sobha Sanctuary",
     developer: "Sobha Realty",
@@ -125,7 +166,6 @@ export const PROJECTS = [
     img: chelseaDamacImg,
     handover: "Q4 2029",
   },
-  // ── Moved to end ─────────────────────────────────────────────────────────
   {
     name: "Binghatti Wraith",
     developer: "Binghatti",
@@ -143,15 +183,6 @@ export const PROJECTS = [
     price: "AED 4.2M",
     img: tilalImg,
     handover: "Q4 2028",
-  },
-  {
-    name: "Greenz by Danube",
-    developer: "Danube Properties",
-    loc: "Academic City, Dubai",
-    bedrooms: "3, 4, 5 BR",
-    price: "AED 3.5M",
-    img: greenzImg,
-    handover: "Q4 2029",
   },
 ];
 

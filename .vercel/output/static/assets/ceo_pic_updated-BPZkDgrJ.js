@@ -1,0 +1,1 @@
+var e=`/assets/aboutusimg-DI6o5bKM.jpg`,t=`/assets/ceo_pic_updated-C0bL6TfZ.jpeg`;export{e as n,t};

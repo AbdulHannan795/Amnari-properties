@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block error and internal TanStack/Nitro internals
+Disallow: /_nitro/
+Disallow: /__data/
+Disallow: /api/
+
+Sitemap: https://www.amnariproperties.com/sitemap.xml
