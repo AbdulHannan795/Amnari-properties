@@ -41,7 +41,7 @@ function Hero() {
 							className: "inline-flex items-center gap-2 border border-accent/40 bg-accent/10 px-4 py-2 mb-8",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "h-2 w-2 rounded-full bg-accent animate-pulse shrink-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 								className: "text-xs sm:text-sm tracking-[0.18em] uppercase text-accent font-semibold",
-								children: "Coming Soon: Alva at The Valley by Emaar — Expression of Interest (EOI) Now Open"
+								children: "COMING SOON : SHAHRUKHZ RESIDENCES BY DANUBE — EXPRESSION OF INTEREST (EOI) NOW OPEN"
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
