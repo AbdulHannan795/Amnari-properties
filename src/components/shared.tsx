@@ -20,7 +20,7 @@ import rawDistrict2Img from "@/assets/Raw_District_Phase_2.webp";
 import valiaEmaarImg from "@/assets/valia emaar.jpg";
 import samanaSouthHavenImg from "@/assets/samana south haven.jpg";
 import woodsSobhaImg from "@/assets/woods_sobha.jpg";
-import sobhaSanctuaryImg from "@/assets/sobha-sanctuary.jpg";
+import koreImtiazImg from "@/assets/kore-by-imtiaz.webp";
 import chelseaDamacImg from "@/assets/Chelsea-Residences-by-Damac.jpg";
 import alvaValleyImg from "@/assets/alva_valley_phase 3.png";
 import binghattiSpectreImg from "@/assets/spectre_pic_2.jpg";
@@ -45,7 +45,17 @@ export const NAV = [
 ];
 
 export const PROJECTS = [
-  // ── Position #1 & #2: New featured launches ──────────────────────────────
+  // ── Position #1: New launch ──────────────────────────────────────────────
+  {
+    name: "KORE by Imtiaz",
+    developer: "Imtiaz Developments",
+    loc: "DubaiLand Residence Complex (DLRC), Dubai",
+    bedrooms: "Studio, 1BR, 2BR",
+    price: "AED 679K",
+    img: koreImtiazImg,
+    handover: "Q4 2028",
+  },
+  // ── Position #2 & #3: Featured launches ──────────────────────────────────
   {
     name: "Shahrukhz Residences",
     developer: "Danube Properties",
@@ -53,7 +63,7 @@ export const PROJECTS = [
     bedrooms: "Studio, 1BR, 2BR, 3BR",
     price: "AED 1.65M",
     img: shahrukhzImg,
-    handover: "Q2 2030",
+    handover: "Q4 2029",
   },
   {
     name: "Binghatti Starfall",
@@ -64,7 +74,7 @@ export const PROJECTS = [
     img: starfallBinghattiImg,
     handover: "Q3 2028",
   },
-  // ── Position #3 through #9: Existing shifted projects ────────────────────
+  // ── Position #4 through #10: Shifted projects ────────────────────────────
   {
     name: "Alva at The Valley",
     developer: "Emaar Properties",
@@ -128,7 +138,7 @@ export const PROJECTS = [
     img: woodsSobhaImg,
     handover: "Q4 2029",
   },
-  // ── Position #10 & #11: Danube projects ──────────────────────────────────
+  // ── Position #11 & #12: Danube projects ──────────────────────────────────
   {
     name: "Greenz by Danube",
     developer: "Danube Properties",
@@ -147,16 +157,7 @@ export const PROJECTS = [
     img: serenzDanubeImg,
     handover: "Q4 2029",
   },
-  // ── Position #12 through #15: Remaining existing projects ────────────────
-  {
-    name: "Sobha Sanctuary",
-    developer: "Sobha Realty",
-    loc: "Al Yufrah 1",
-    bedrooms: "4, 5, 6 BR",
-    price: "AED 3.99M",
-    img: sobhaSanctuaryImg,
-    handover: "Q4 2029",
-  },
+  // ── Position #13 through #15: Remaining existing projects ────────────────
   {
     name: "Chelsea Residences by DAMAC",
     developer: "DAMAC Properties",
