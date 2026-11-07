@@ -217,12 +217,10 @@ function ContactPage() {
               </h2>
               <ul className="space-y-6">
                 <ContactRow Icon={MapPin} title="Office Address">
-                  Warba Center Al Muraqqabat, Dubai
+                  Office 62, 1st Floor, Sheikh Rashid Building, Sheikh Zayed Road, Trade Centre 1, Dubai
                 </ContactRow>
                 <ContactRow Icon={Phone} title="Phone">
                   <a href="tel:+971547521139" className="hover:text-accent">+971 547521139</a>
-                  {" / "}
-                  <a href="tel:+971547542963" className="hover:text-accent">+971 54 754 2963</a>
                 </ContactRow>
                 <ContactRow Icon={Mail} title="Email">
                   <a href="mailto:contact@amnariproperties.com" className="hover:text-accent">
